@@ -23,5 +23,5 @@ def binary_search(arr, value):
     # if it was not found
     return position
 names = ['ali', 'Habib', 'Fatima', 'Samad', 'Babak', 'charlie','david','edward']
-names.sort()
-print(names)
+binary_search(names,8)
+
