@@ -1,5 +1,5 @@
 def duplicateCount(text):
-    #I need to use a dictionary or an array with the size of 256
+    #Counts the number of characters of the same kind next to each other 
     text = text.lower()
     counter, sum = 0,0
     while (counter  < len(text)-1):
