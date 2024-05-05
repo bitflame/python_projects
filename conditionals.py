@@ -61,3 +61,130 @@ for value in range(1, 100):
 for value in 1, 101:
     print("Hello")
 
+alian_color = 'green'
+if alian_color == 'green':
+    print('You earned five points. Because alian color was green')
+else: 
+    print('You earned 10 points')
+    
+alian_color = 'red'
+if alian_color == 'green':
+    print('You earned five points because alien color was green.')
+else:
+    print('You earned 10 points because the alien color was red.')
+# Exercise 5-5  
+print ('********************************Exercise 5-5*********************************')
+alian_color = 'green'
+if alian_color == 'green':
+    print('You earned five points')
+elif alian_color == 'yellow':
+    print('You earned 10 points because the alien color was yellow.')
+elif alian_color == 'red':
+    print('You earned 15 points because the alien color was red')
+
+alian_color = 'red'
+if alian_color == 'green':
+    print('You earned five points')
+elif alian_color == 'yellow':
+    print('You earned 10 points because the alien color was yellow.')
+elif alian_color == 'red':
+    print('You earned 15 points because the alien color was red')
+
+alian_color = 'yellow'
+if alian_color == 'green':
+    print('You earned five points')
+elif alian_color == 'yellow':
+    print('You earned 10 points because the alien color was yellow.')
+elif alian_color == 'red':
+    print('You earned 15 points because the alien color was red')
+
+alian_color = 'blue'
+if alian_color == 'green':
+    print('You earned five points')
+elif alian_color == 'yellow':
+    print('You earned 10 points because the alien color was yellow.')
+elif alian_color == 'red':
+    print('You earned 15 points because the alien color was red')
+else:
+    print('This color alien has never been seen')
+    
+# 5-6 
+print('*******************************Exercise 5-6***************************')
+age = 1
+if age < 2: 
+    print('You are a baby:)')
+elif age >= 2 and age <4:
+    print('You are a toddler:)')
+elif age >= 4 and age < 13:
+    print('You are a kid:)')
+elif age >= 13 and age < 20:
+    print('You are a teenager:)')
+elif age >= 20 and age < 65: 
+    print('You are an adult:)')
+else: print('You are an elder.:)')
+
+age = 2
+if age < 2: 
+    print('You are a baby:)')
+elif age >= 2 and age <4:
+    print('You are a toddler:)')
+elif age >= 4 and age < 13:
+    print('You are a kid:)')
+elif age >= 13 and age < 20:
+    print('You are a teenager:)')
+elif age >= 20 and age < 65: 
+    print('You are an adult:)')
+else: print('You are an elder.:)')
+
+
+age = 4
+if age < 2: 
+    print('You are a baby:)')
+elif age >= 2 and age <4:
+    print('You are a toddler:)')
+elif age >= 4 and age < 13:
+    print('You are a kid:)')
+elif age >= 13 and age < 20:
+    print('You are a teenager:)')
+elif age >= 20 and age < 65: 
+    print('You are an adult:)')
+else: print('You are an elder.:)')
+
+age = 13
+if age < 2: 
+    print('You are a baby:)')
+elif age >= 2 and age <4:
+    print('You are a toddler:)')
+elif age >= 4 and age < 13:
+    print('You are a kid:)')
+elif age >= 13 and age < 20:
+    print('You are a teenager:)')
+elif age >= 20 and age < 65: 
+    print('You are an adult:)')
+else: print('You are an elder.:)')
+
+age = 20
+if age < 2: 
+    print('You are a baby:)')
+elif age >= 2 and age <4:
+    print('You are a toddler:)')
+elif age >= 4 and age < 13:
+    print('You are a kid:)')
+elif age >= 13 and age < 20:
+    print('You are a teenager:)')
+elif age >= 20 and age < 65: 
+    print('You are an adult:)')
+else: print('You are an elder.:)')
+
+age = 65
+if age < 2: 
+    print('You are a baby:)')
+elif age >= 2 and age <4:
+    print('You are a toddler:)')
+elif age >= 4 and age < 13:
+    print('You are a kid:)')
+elif age >= 13 and age < 20:
+    print('You are a teenager:)')
+elif age >= 20 and age < 65: 
+    print('You are an adult:)')
+else: print('You are an elder.:)')
