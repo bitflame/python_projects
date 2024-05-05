@@ -20,5 +20,48 @@ print(max(myNumbers))
 print(sum(myNumbers))
 
 odd_numbers = list(range(1, 21, 2))
-print(odd_numbers)
+print("Here are odd numbers printed out:")
+for value in odd_numbers:
+    print(value)
+
+every_three = list(range(3, 31, 3))
+for value in every_three: 
+    print(value)
+print("Here is a list of cubed values from 1 to 10")
+for value in range(1, 11):
+    print(value**3)
     
+print("Here is cubed values using list comprehensions")    
+cubed = [value ** 3 for value in range(1, 11)]
+print(cubed)
+
+print("The first three items in the linst are: ", cubed[:3])
+print("Three items from the middle of the list are:", cubed[3:6])
+print("The last three items are: ", cubed[-3:])
+print("The last three items are also: ", cubed[7:])
+pizzas = ['peperoni', 'white', 'cheese']
+friend_pizzas = pizzas[:]
+pizzas.append("vegeterian")
+friend_pizzas.append("pinapple")
+print("My favorite pizzas are:")
+for pizza in pizzas: 
+    print(pizza)
+print("My friend's favorite pizzas are: ")
+for pizza in friend_pizzas:
+    print(pizza)
+    
+
+buffet = ('hamburger','fried chicken','steak', 'pizza')
+print("Here is what the buffet serves: ")
+for entre in buffet:
+    print(entre)
+
+# buffet[2]='mashed potatos' <- Trying to change an item in tupple gives an error message
+print("Changing the content of buffet items. Now it contains: ")
+buffet = ('hamburder', 'hotdog', 'fries', 'chicken fajitas')
+for item in buffet:
+    print(item)
+count = 0
+while count < 10: 
+    print("Count = ", count)
+    count=count+1
