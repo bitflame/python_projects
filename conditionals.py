@@ -188,3 +188,58 @@ elif age >= 13 and age < 20:
 elif age >= 20 and age < 65: 
     print('You are an adult:)')
 else: print('You are an elder.:)')
+
+favorite_fruits = ['apples', 'oranges', 'grapes']
+if 'bananas' in favorite_fruits:
+    print('You really like bananas')
+if 'strawberries' in favorite_fruits:
+    print('You really like strawberries')
+if 'watermellon' in favorite_fruits:
+    print('You really like watermellon')
+if 'apples' in favorite_fruits:
+    print('You really like apples')
+if 'oranges' in favorite_fruits:
+    print('You really like oranges')
+    
+user_names = ['admin', 'jsmith', 'bmurray', 'jbeam']
+# user_names = []
+for user in user_names:
+    if user_names:
+        if user == 'admin':
+            print("Hi admin, would you like to see a report?")
+        else:
+            print("Greetings ", user)
+    else: print("The list of users is empty")
+original_users = ['admin', 'jsmith', 'bmurray', 'jbeam','sthompson', 'JOHN']
+current_users = []
+for user in original_users:
+    current_users.append(user.lower())
+
+new_users = ['bmoran', 'dkaine','wjackson', 'jsmith','bmurray', 'john']
+for new_user in new_users:
+    if new_user in current_users:
+        print(new_user,"username is already being used, please pick a new username.")
+    else: print(new_user,"username is available. ")
+    
+numbers = list(range(1, 11))
+for number in numbers:
+    if number == 1: 
+        print(f"{number}st")
+    elif number == 2:
+        print(f"{number}nd")
+    elif number == 3:
+        print(f"{number}rd")
+    else: 
+        print(f"{number}th")
+       
+def fib(num):
+    num1, num2 = 0, 1
+    fib_series = []
+    while(len(fib_series)<num):
+        fib_series.append(num1)
+        num1, num2 = num2, num2 + num1
+    return fib_series
+
+print(fib(3))
+print(fib(4))
+print(fib(10))
