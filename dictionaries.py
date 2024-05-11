@@ -121,7 +121,7 @@ creature_3 = {
 }
 
 #for infoCategory, infoContent in creature_1.items():
-#   print(f"{infoCategory}:{infoContent}")
+#   print(f"{infoCategory}:{infoContent}") Question - I wonder if there is a way to get the key names instead of hardcoding them
 
 pets = [creature_1, creature_2, creature_3]
 
@@ -132,3 +132,65 @@ for pet in pets:
         
 for pet in pets:
     print(f"This is a {pet['kind']}, and its owner is: {pet['owner']}")
+    
+    
+# 6 - 10 change exercise 6-1 so each person has more than one favorite number
+person1_favorites = [1, 2 , 3]
+person2_favorites = [4 ,5 ,6 ]
+person3_favorites = [7, 8, 9 ]  
+
+individuals_favorite_numbers = {
+    'person1': person1_favorites,
+    'person2': person2_favorites,
+    'person3': person3_favorites,
+}
+for person, favorites in individuals_favorite_numbers.items():
+    print(person, favorites)
+
+
+for person in individuals_favorite_numbers.keys():
+    print(f"{person}'s favorite numbers are: ")
+    for favorite in individuals_favorite_numbers[person]:
+        print(favorite)
+
+#Exercise 6 - 11 Cities 
+
+cities = {
+    'budapest' : {
+        'country': 'hungry',
+        'population': 1_752_286,
+        'fact':'near Danube river',
+    },
+    'mexico_city' : {
+        'county': 'mexico',
+        'population': 22_505_315,
+        'fact': 'most populous city in south america'
+    },
+    'tokyo' : {
+        'county': 'japan',
+        'population': 13_047_446,
+        'fact': 'other name is Edo'
+    },
+}
+for city, details in cities.items():
+    print(f"City of {city}:")
+    for detKey, detVal in details.items():
+        print(f"{detKey}: {detVal}")
+print('****************************Printing cities attempt #2**********************************************')
+for city in cities.values():
+    for cityKey, cityValue in city.items():
+        print(cityKey, cityValue)
+
+#Extensions - trying to see how to impement the adjency list of a graph
+adjacencies = [[], [], [], [], [], []]
+adjacencies[0].append(1)
+adjacencies[1].append(9)
+adjacencies[2].append(8)
+adjacencies[3].append(5)
+adjacencies[4].append(6)
+adjacencies[5].append(0)
+print("Printing the adjancy list I built")
+for i, item in enumerate(adjacencies, start=0):
+    print(i, item)
+   
+
