@@ -1,0 +1,4 @@
+In Python you can use a list to create a number of different collection types like arrays, linked lists, etc.
+In Python you can assign values to variables based on a positional format 
+In Python you can write less code and get more functionality 
+In Python you can use C++ code that you already have 

@@ -1,0 +1,1 @@
+& C:/Users/shazd/AppData/Local/Programs/Python/Python312/python.exe c:/Users/shazd/OneDrive/Documents/VisualStudioCodeProjects/python_projects/adhoc_practice.py

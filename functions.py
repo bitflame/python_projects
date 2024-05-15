@@ -3,6 +3,10 @@ from books import  favorite_book
 from shirts import make_shirt as mk
 import cities as ct
 from albums_functions import *
+from classes import restaurant
+# I can import an instance of a class. Wow
+print('Printing restaurant is now open from another file that imported only an instance of a class called Restaurant.')
+restaurant.open_restaurant()
 
 display.display_message()
 
