@@ -21,4 +21,25 @@ else:
     if len(favorite_numbers)>0:
         content = json.dumps(favorite_numbers)
         path.write_text(content)
-
+# exercise 10-13
+path = Path('user_credentials.json')
+if path.exists():
+    new_credentials = path.read_text()
+    converted_new_credentials = json.loads(new_credentials)
+    answer = input(f"Is {converted_new_credentials['username']} your username? (y/n) ")
+    if answer=='y':
+        new_credentials = path.read_text()
+        converted_new_credentials = json.loads(new_credentials)
+        print(f"Welcome Mr. {converted_new_credentials['username']}")
+        for key, val in converted_new_credentials.items():
+            print(f"{key}:{val}")
+    else:
+        user_credentials = {}
+        user_name = input('Please enter your username: ')
+        user_credentials['username'] = user_name
+        pass_wd = input('Please enter the password you would like: ')
+        user_credentials['password'] = pass_wd
+        user_age = input('Please enter how old you are: ')
+        user_credentials['age'] = user_age
+        json_content = json.dumps(user_credentials)
+        path.write_text(json_content)
