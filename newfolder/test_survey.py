@@ -1,4 +1,8 @@
+import pytest
 from survey import AnonymousSurvey
+@pytest.fixture
+def language_survey():
+    print()    
 def test_store_single_response():
     '''Test that a single response if stored properly'''
     question = 'What language did you learn first'
